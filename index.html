@@ -717,31 +717,95 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: rgba(10, 10, 10, 0.98);
-        width: 100%;
-        height: calc(100vh - 70px);
-        text-align: center;
-        transition: left 0.3s ease;
-        padding: 2rem 0;
-        backdrop-filter: blur(10px);
-        z-index: 999;
-    }
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background-color: rgba(10, 10, 10, 0.98);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                padding: 2rem 0;
+                backdrop-filter: blur(10px);
+            }
 
-    .nav-menu.active {
-        left: 0;
-        right: 0;
-    }
-
-    .nav-container {
-        overflow-x: hidden;
-    }
+            .nav-menu.active {
+    left: 0;
+    width: 100%;
 }
-@media (max-width: 480px) {
+
+            .nav-menu li {
+                margin: 1rem 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-content {
+                padding: 1rem;
+            }
+
+            .terminal-body {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 80px 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .profile-img {
+                width: 250px;
+                height: 250px;
+                font-size: 3rem;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 200px;
+                text-align: center;
+            }
+
+            .skills-grid,
+            .projects-grid,
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline {
+                padding-left: 1rem;
+            }
+
+            .timeline-item {
+                margin-left: 1rem;
+            }
+
+            .timeline-item::before {
+                left: -1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
             .nav-container {
                 padding: 0 1rem;
             }
