@@ -723,7 +723,7 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+       @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
     top: 70px;
@@ -736,10 +736,12 @@
     padding: 2rem 0;
     backdrop-filter: blur(10px);
     z-index: 999;
+    margin: 0; /* ✅ ensure no offset */
   }
 
   .nav-menu.active {
     left: 0;
+    margin: 0; /* ✅ ensure no gap on the left */
   }
 
   .hamburger {
@@ -759,6 +761,7 @@
     margin: 1rem 0;
   }
 }
+
 
             .hamburger {
                 display: flex;
