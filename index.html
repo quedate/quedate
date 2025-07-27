@@ -717,6 +717,15 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+    .nav-menu.active {
+        left: 0;
+        right: 0; /* ✅ ADDED to prevent overflow */
+    }
+
+    .nav-container {
+        overflow-x: hidden; /* ✅ ADDED to restrict scroll */
+    }
+
             .nav-menu {
                 position: fixed;
                 left: -100%;
